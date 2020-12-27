@@ -15,7 +15,7 @@ int main(int argc, char** argv)
 	catch(const XMLException& exp) 
     {
 		char* message = XMLString::transcode(exp.getMessage());
-		std::cerr << "Xerces-C++ 初期化エラー" << std::endl;
+		std::cerr << "Xerces-C++ Initialization Error" << std::endl;
 		std::cerr << message << std::endl;
 		XMLString::release(&message);
 		return 1;
