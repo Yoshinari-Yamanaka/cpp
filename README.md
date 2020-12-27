@@ -1,4 +1,4 @@
-## First
+## Check it out that Cmake version
 
 Check it out that your environment has "cmake 3.2 or higer"
 
@@ -8,8 +8,8 @@ more info
 
 https://github.com/Yoshinari-Yamanaka/Linux/blob/WSL2/setup.sh
 
-## Second
+## build and install Xerces
 . setup.sh
 
-## Second
+## build your program
 . build.sh
