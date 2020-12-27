@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE infos [
+		<!ELEMENT infos (info)*>
+		<!ELEMENT info (id, status, datas?)>
+		<!ELEMENT id (#PCDATA)>
+		<!ELEMENT status (#PCDATA)>
+		<!ELEMENT datas (data)*>
+		<!ELEMENT data (#PCDATA)>
+		<!ATTLIST data
+				type CDATA #REQUIRED
+				value CDATA #REQUIRED>
+		]>
+<infos>
+	<info>
+		<id>id1</id>
+		<status>0</status>
+		<datas>
+			<data type="1" value="user@123"/>
+		</datas>
+	</info>
+	
+	<info>
+		<id>id2</id>
+		<status>1</status>
+	</info>
+	<info>
+		<id>id3</id>
+		<status>2</status>
+		<datas></datas>
+	</info>
+	<info>
+		<id>id4</id>
+		<status>3</status>
+		<datas>
+			<data type="1" value="user@123"/>
+			<data type="2" value="user@12345678"/>
+			<data type="5" value="12345678"/>
+		</datas>
+	</info>
+</infos>
